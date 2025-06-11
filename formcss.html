@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form-CSS</title>
+</head>
+<body>
+    <style>
+       label{
+        color:darkgreen;
+        
+       }
+       td{
+        padding-left:20px;
+
+       }
+       input{
+        width:300px;
+        height:20px;
+        border:3px solid grey;
+        border-radius:40px;
+        background-color: cornsilk;
+        float:right;
+       }
+       select{
+        width:300px;
+        height:30px;
+        border:3px solid grey;
+        border-radius:40px;
+         background-color:cornsilk;
+       }
+       p input{
+        width:100px;
+        height:30px;
+        border:3px solid grey;
+        border-radius:40px;
+        background-color: cornsilk;
+       }
+      
+        body{
+            background-image: url("https://static.vecteezy.com/system/resources/thumbnails/006/965/779/small_2x/empty-top-wooden-table-and-sakura-flower-with-fog-and-morning-light-background-photo.jpg");
+            background-repeat: no-repeat;
+            background-size: cover; 
+            background-position: center;
+        }
+        table{
+            margin-left: auto;
+            margin-right: auto;
+            
+        }
+        td{
+            
+            padding-left:50px;
+        }
+    </style>
+        
+    <form action="" method="" >
+        <table>
+            <tr>
+         <td><label for="name"><b>Enter FirstName</b></label>
+        <input type="text" placeholder="enetr your fname"><br><br><br>
+        <label for="name"><b>Enter LastName</b></label>
+        <input type="text" placeholder="enter lname"><br><br><br>
+        <label for="psw"><b>Enter Password</b></label>
+        <input type="password" placeholder="enter password"><br><br><br>
+        <label for="psw"><b>Confirm Password</b></label>
+        <input type="password" placeholder="enter password"><br><br><br>
+        <label for="name"><b>Enter Email</b></label>
+        <input type="email" placeholder="enter mail"><br><br><br>
+        <label for="name"><b>Enter Date of Birth</b></label>
+        <input type="date"><br><br>
+        <label for="dropdown"><b>Select Books you want</b></label>
+        <select name="" id="">
+            <option value="">Select</option>
+            <option value="">AI</option>
+            <option value="">ML</option>
+            <option value="">PYTHON</option>
+            <option value="">JAVA</option>
+        </select><br><br><br>
+       <label for="phno"><b>Phone number</b></label>
+        <input type="tel" placeholder="enter phone number" maximum="10"><br><br><br>
+        <p>
+        <input type="submit" >
+        <input type="reset"></p>
+       </tr> </td>
+    </form>
+    </table>
+</body>
+</html>
