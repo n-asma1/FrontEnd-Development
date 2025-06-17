@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>positions</title>
+</head>
+<body>
+  <style>
+    /* static */
+    #d1{
+        height:300px;
+        width:200px;
+        background-color: gold;
+    }
+    .c1{
+        height:100px;
+        width:100px;
+        background-color: blue;
+    }
+    .c2{
+        height:100px;
+        width:100px;
+        background-color: red;
+        position:static;
+    }
+    /* relative */
+    #d2{
+        height:300px;
+        width:200px;
+        background-color: gold;
+    }
+    .c12{
+        height:100px;
+        width:100px;
+        background-color: blue;
+        position:relative;
+        left:100px;
+    }
+    .c22{
+        height:100px;
+        width:100px;
+        background-color: red;
+        position:relative;
+        top:100px;
+       
+    }
+    /* absolute */
+    #d3{
+        height:200px;
+        width:200px;
+        background-color: gold;
+        position: relative;
+    }
+    .c13{
+        height:100px;
+        width:100px;
+        background-color: blue;
+        top:10px;
+    }
+    .c23{
+        height:100px;
+        width:100px;
+        background-color: red;
+        position:absolute;
+        left:10px;
+       
+    }
+    /* fixed */
+    #d4{
+        height:200px;
+        width:200px;
+        background-color: gold;
+    }
+    .c14{
+        height:100px;
+        width:100px;
+        background-color: blue;
+       
+    }
+    .c24{
+        height:100px;
+        width:100px;
+        background-color: red;
+        position:fixed;
+        top:20px;
+    }
+    /* sticky */
+    #d5{
+        height:200px;
+        width:200px;
+        background-color: gold;
+    }
+    .c15{
+        height:100px;
+        width:100px;
+        background-color: blue;
+    }
+    .c25{
+        height:100px;
+        width:100px;
+        background-color: red;
+        position:sticky;
+        left:50px;
+    }
+  </style>
+  <h1>Static postion</h1>
+    <div id="d1">
+        <div class="c1"></div>
+        <div class="c2"></div>
+    </div>
+    <h2>Relative position</h2>
+    <div id="d2">
+        <div class="c12"></div>
+        <div class="c22"></div>
+    </div>
+    <h2>Absolute position</h2>
+    <div id="d3">
+        <div class="c13"></div>
+        <div class="c23"></div>
+    </div>
+    <h1>Fixed position</h1>
+    <div id="d4">
+        <div class="c14"></div>
+        <div class="c24"></div>
+    </div>
+        <h1>Sticky position</h1>
+    <div id="d5">
+        <div class="c15"></div>
+        <div class="c25"></div>
+    </div>
+</body>
+</html>
