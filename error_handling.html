@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        
+        try{
+    console.log("Execution starts");
+    hjgjrn;
+    console.log("no error occured");
+}
+catch(err){
+    console.log("the error is"+err);
+
+}
+finally{
+    console.log("this will always run");
+}
+console.log("out of try-catch");
+
+//creating our own error
+let a='{"age":30}';
+try{
+    let user=JSON.parse(a);
+    if(!user.name){
+        throw new SyntaxError("Incomplete data:No name");
+    }
+    console.log(user.name);
+}
+catch(err){
+    console.log("the error is"+err);
+
+}
+finally{
+    console.log("this will always run");
+}
+    </script>
+</head>
+<body>
+    <h1>Error Handling</h1>
+</body>
+</html>
