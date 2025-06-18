@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Age-Cal</title>
+    <script>
+        let date=15;
+        let month=1;
+        let year=2095;
+        const today=new Date();
+        const year1=today.getFullYear();//2025
+        const month1=today.getMonth()+1;
+        const day=today.getDate();
+        let a=year1-year;
+        let b=month1-month;
+        let c=day-date;
+        if(a<0 || b<0){
+            console.log("given more than present value");
+        }
+        else{
+            console.log(a+"years "+b+"months "+c+"days");
+        }
+
+
+
+    </script>
+</head>
+<body>
+    <h1>Age Calculator</h1>
+</body>
+</html>
