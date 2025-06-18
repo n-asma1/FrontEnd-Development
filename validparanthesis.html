@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ValidParan</title>
+    <script>
+        function valid() {
+    let s = "[{()}]";
+    let a = [];
+
+    const b= {
+        ')': '(',
+        ']': '[',
+        '}': '{'
+    };
+
+    for (let i = 0; i < s.length; i++) {
+        if (s[i] === '(' || s[i] === '{' || s[i] === '[') {
+            a.push(s[i]);  
+        } 
+        else if (s[i] === ')' || s[i] === '}' || s[i] === ']') {
+            if (a.length === 0 || a.pop() !== b[s[i]]) {
+                console.log(false);
+                return;
+            }
+        }
+    }
+    console.log(a.length === 0);
+}
+
+valid();  
+
+    </script>
+</head>
+<body>
+    <h1>Valid Paranthesis</h1>
+</body>
+</html>
