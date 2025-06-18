@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Borders</title>
+</head>
+<body>
+    <style>
+        body{
+            background-color: orchid;
+        }
+        label{
+            font-weight:bold;
+        }
+        input{
+            
+            float:right;
+            background:whitesmoke;
+        }
+        input[type=text]{
+            border-radius:10px;
+            border-style: groove;
+            border-width:thick;
+            border-color:blue;
+            
+            height:25px;
+        }
+        input[type=password]{
+             border-radius:5px;
+            border-top-style: double;
+            border-left-style:solid;
+            border-bottom-style:double;
+            border-right-style:solid;
+            border-width:thick;
+            border-color:red;
+            height:25px;
+        }
+        input[type=email]{
+            border-radius:20px;
+           border:5px dashed aqua;
+            border-width: auto;
+            height:25px;
+        }
+    </style>
+    <form action="">
+        <table align="center">
+            <tr><td>
+                <label>Enter Name:</label>
+                <input type="text" placeholder="enter your name"><br><br><br>
+                <label>Enter Password:</label>
+                <input type="password" placeholder="enter your password"><br><br><br>
+                <label>Confirm Password:</label>
+                <input type="email" placeholder="enter your mail">
+            </tr></td>
+        </table>
+    </form>
+</body>
+</html>
