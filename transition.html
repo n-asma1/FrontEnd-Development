@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>transition</title>
+</head>
+<body>
+    <style>
+        #d1{
+            width:200px;
+            height:200px;
+            background:red;
+            transition:width 3s;
+        }
+        #d1:hover{
+            width:300px;
+        }
+        #d2{
+            width:200px;
+            height:200px;
+            background:pink;
+            transition:height 3s,width 2s,transform 3s;
+            
+        }
+        #d2:hover{
+            height:400px;
+            width:300px;
+            transform:rotate(90deg);
+            transition-duration: 6s;
+        }
+</style>
+<P>If you keep cursor on block it extends</P>
+    <div align="center" id="d1"><b >BLOCK</b></div><br>
+    <p>If you keep cursor on block it rotate</p>
+    <div id="d2"></div>
+</body>
+</html>
